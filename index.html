@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Body Weight Fitness Workout"/>
+        <meta name="keywords" content="Body Weight Exercises, Calithenics"/>
+        <meta name="author" content="Calixto Francis Mantal II"/>
+        <title>Body Wieght Fitness Workout</title>
+        <link rel="icon" href="images/tabIcon.png"/>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="titlelogo">
+                <a href="javascript:void(0)"><img src="images/TITLE%20LOGO%20PAGE.png" alt="bodyweightfitnesslogo" title="Go to home" width="300px"></a>
+            </div>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <div class="dropdown">
+                        <li><a href="#">WORKOUT ROUTINE <i class="fas fa-caret-down" id="downmore"></i></a>
+                            <div class="dropdowncontent">
+                                <a href="#">BEGINNER</a>
+                                <a href="#">INTERMEDIATE</a>
+                                <a href="#">ADVANCE</a>
+                            </div>
+                        </li>
+                    </div>
+                    <li><a href="#">LOCATION</a></li>
+                    <li><a href="javascript:void(0)" id="onoff" onclick="toggle()" title="switch to Dark Mode"><i class="fas fa-toggle-off" id="off"></i><i class="fas fa-toggle-on" id="on" style="display: none"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <article id="article">
+            <div class="container">
+                <div class="intro">
+                    <h1 style="font-size: 350%; color: #ff0000;">MEET OUR TRAINORS</h1>
+                </div>
+                <div class="paragraph" id="para">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id semper eros. Aenean convallis maximus massa eu hendrerit. Fusce vitae nulla laoreet, faucibus quam dignissim, porttitor tellus. Integer sollicitudin urna eget lobortis pulvinar. Ut consectetur eros dolor, eget faucibus ligula porttitor quis. Fusce ullamcorper rutrum elementum. In suscipit dictum dignissim. Pellentesque libero odio, placerat non pellentesque sed, tincidunt sed turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id semper eros. Aenean convallis maximus massa eu hendrerit. Fusce vitae nulla laoreet, faucibus quam dignissim, porttitor tellus. Integer sollicitudin urna eget lobortis pulvinar. Ut consectetur eros dolor, eget faucibus ligula porttitor quis. Fusce ullamcorper rutrum elementum. In suscipit dictum dignissim. Pellentesque libero odio, placerat non pellentesque sed, tincidunt sed turpis.</p>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Search for Trainor..." >
+                </div>
+            </div>   
+        </article>
+        
+        <section>
+            <div class="box">
+                <img src="images/CY.png"/ alt="photo of Cyries Front End Developer" width="130px">
+                <span>CALIXTO FRANCIS MANTAL II</span>
+                <span>CALISTHENICS TRAINOR</span>
+            </div>
+            <div class="box">
+                <img src="images/DENVER.png"/ alt="photo of Denver Back End Developer" width="130px">
+                <span>DENVER ONG VILLAROJO</span>
+                <span>DEAD LIFTH TRAINOR</span>
+            </div>
+        </section>
+
+        
+        <div class="wraper" id="wraper">
+            <div class="wrapercontent container">
+                <div class="wrap-box left" id="left">
+                    <div><h2 id="wrapboxleftH2">WILL REACH OUT TO YOU...</h2></div>
+                    <div><input type="text" name="name" placeholder="Name..."></div>
+                    <div><input type="email" name="email" placeholder="Email..."></div>
+                    <div><button type="button">Send</button></div>
+                </div>
+                
+                
+                <div class="wrap-box right" id="right">
+                    <div class="schedule"><h1 id="wrapboxrightH1">SCHEDULE YOUR TOUR & FIRST <br> CONSULTATION</h1></div>
+                    <div class="para"><p id="wrapboxrightPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id semper eros. Aenean convallis maximus massa eu hendrerit. Fusce vitae nulla laoreet, faucibus quam dignissim, porttitor tellus. Integer sollicitudin urna eget lobortis pulvinar. Ut consectetur eros dolor, eget faucibus ligula porttitor quis. Fusce ullamcorper rutrum elementum.</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>

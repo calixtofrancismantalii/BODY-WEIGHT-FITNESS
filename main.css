@@ -1,0 +1,291 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-family: sans-serif;
+    color: white;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+
+/*HEADER*/
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+}
+.titlelogo{
+    padding: 5px 0px 0px 10px; 
+    
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0px 15px; 
+}
+nav ul a{
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: white;
+}
+.dropdowncontent{
+    position: absolute;
+    background-color: red;
+    min-width: 210px;
+    display: none;
+}
+label, #toggle{
+    display: none;
+}
+.active{
+    background-color: red;
+}
+ul .dropdown:hover .dropdowncontent{
+    display: block;
+}
+.dropdowncontent a:hover{
+    background-color: #c00505;
+}
+
+
+
+
+/*ARTICLE*/
+article{
+    z-index: -1;
+    background-color: #d4d4d2;
+    text-align: center;
+}
+article div:nth-child(odd){
+    padding: 35px 0px;
+}
+.paragraph{
+    text-align: justify;
+    color: #6f6f6d;
+}
+.input input[type=text]{
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+/*SECTION*/
+section{
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+section > .box{
+    flex: 1;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box span:nth-child(even){
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+}
+.box span:nth-child(odd){
+    color:  black;
+}
+
+
+/*WRAPER*/
+.wraper{
+    background-image: url(images/FOOTERtwo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.wrapercontent{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrap-box{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapercontent > .wrap-box{
+    flex: 4;
+}
+.wrapercontent > .right{
+    flex: 5;
+}
+
+.left{
+    text-align: center;
+    border-right: solid 3px black;
+}
+.left h2{
+    padding: 20px 0px;
+    color: black;
+}
+.left input[type=text], input[type=email]{
+    font-size: 20px;
+    width: 65%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px 0px 
+}
+.left button{
+    font-size: 15px;
+    padding: 13px;
+    width: 69%;
+    border-radius: 5px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+}
+
+.right{
+    border-left: solid 3px black;
+}
+.right > div{
+    margin: 0px 29px
+}
+.schedule{
+    text-align: left;
+    border-bottom: solid 3px red;
+}
+.schedule > h1{
+    font-size: 270%;
+    padding:  20px 35px;
+    color: black;
+}
+.para{
+    border-top: solid 3px red;
+}
+.para > p{
+    text-align: center;
+    padding:  20px 35px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/*meadia queries*/
+@media(max-width:841px){
+    html{
+        background-color: black;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .titlelogo{
+        text-align: center;
+        padding: 20px;
+    }
+    label{
+        display: block;
+        padding: 10px;
+        font-size: 150%;
+        background-color: dimgrey;
+    }
+    nav{
+        display: none;
+    }
+    #toggle:checked + nav{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px; 
+    }
+    .dropdowncontent{
+        width: 100%;
+    }
+    
+    article .paragraph {
+        text-align: center;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    
+    
+    .wrapercontent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+/*    align-items: center;*/
+    flex-wrap: wrap;
+    }
+    .left, .right{
+        border: none;
+    }
+    
+    .left input[type=text], input[type=email]{
+        width: 90%;
+    }
+    .left button{
+        width: 95%;
+    }
+    .right > div{
+    margin: 0px 0px;
+    }
+    .schedule h1{
+        font-size: 20px;
+        
+    }
+    .para p{
+        text-align: center;
+    }
+   
+    
+    
+    
+    
+}
+@media(max-width:395px){
+    .wraper{
+        height: auto
+    }
+    .wrapercontent{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+
